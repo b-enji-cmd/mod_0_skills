@@ -1,6 +1,7 @@
 class Stove
 
 Attributes
+
 brand(string)
 burner_dial(float)
 pots(array)
