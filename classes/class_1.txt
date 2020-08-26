@@ -1,0 +1,21 @@
+class Stove
+
+Attributes
+brand(string)
+burner_dial(float)
+pots(array)
+burners(hash) |  burner_position(int) , is_on(boolean) |
+timer(int)
+is_oven_open(boolean)
+
+
+Methods
+
+cook(if is_oven_open is false, decrement timer )
+new_pot(updates the pots array)
+heat_stovetop(for given key (burner position) change value of is_on )
+self_clean(override given timer amount and applies full heat for new timer amount of 120)
+time_remaining(returns how long until timer reaches 0)
+
+
+end
