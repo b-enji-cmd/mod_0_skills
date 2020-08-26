@@ -1,0 +1,25 @@
+instance: elways_monitor
+
+
+ Attributes
+
+
+ screen_resolution: = 1080
+ open_tables: = 120
+ reservations: = {"Johnson": 7, "Fulton": 3 , "Green": 8, }
+ current_server: =  "Marcus"
+ is_max_occupants: = false
+ is_patio_open: = false
+
+
+
+ Methods
+
+
+
+
+elways_monitor.fill_seats #No arguments!!  ->  because open_tables == 0 , now is_max_occupants = true && is_patio_open = true
+elways_monitor.change_shift("Mary") -> current_server = "Mary"
+elways_monitor.resize(800)    -> screen_resolution = 800
+elways_monitor.new_reservation(reservations["Filman"] = 5)
+elways_monitor.close_restaurant   #No arguments!!  ->   open_tables = 120 , is_max_occupants = false && is_patio_open = false
