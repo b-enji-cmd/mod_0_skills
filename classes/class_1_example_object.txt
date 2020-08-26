@@ -1,0 +1,19 @@
+Instance: bens_stove
+
+Attributes
+
+brand: = ("LG")
+burner_dial: = 0
+pots: = ["Chicken Noodle Soup" , "Rice" , "Pasta"]
+burners: = {1: false , 2: false , 3: false , 4: false}
+timer: = 0
+is_oven_open: = false
+
+
+Methods
+
+bens_stove.cook(false, 60) ->    starts a decrementing loop
+bens_stove.new_pot("Tortilla Soup") ->       pots: = ["Chicken Noodle Soup" , "Rice" , "Pasta" , "Tortilla Soup"]
+bens_stove.heat_stovetop(burners[1] = true ) ->     burners: = {1: true , 2: false , 3: false , 4: false}
+bens_stove.self_clean #This has no arguments!!   ->   timer = 120
+bens_stove.time_remaining #Neither does this!!   ->   returns current value of timer
