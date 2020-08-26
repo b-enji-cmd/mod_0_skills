@@ -1,0 +1,23 @@
+class ServingMonitor
+ (the thing the servers use to enter data about tables and things,
+ I have no idea whats its called)
+
+ Attributes
+
+
+ screen_resolution(int)
+ open_tables(int)
+ reservations(hash) |key = last_name(string) , value = table_number (int) |
+ current_server(string)
+ is_max_occupants(boolean)
+ is_patio_open(boolean)
+
+
+
+ Methods
+
+ fill_seats(if open_tables is 0, change state of is_max_occupants to true, and set is_patio_open to true)
+ change_shift(updated the current_server string)
+ new_reservation(updates hash with new last name and table_number, decrement open_tables by 1)
+ resize(changes the size of the current application window to the given integer)
+ close_restaurant(updates open_tables to original state, updates is_max_occupants to false, as well as is_patio_open)
