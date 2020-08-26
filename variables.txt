@@ -1,0 +1,11 @@
+#Using ruby here!
+food = "Taco"
+is_delicious = true
+food = pizza
+num2 = 10
+num7 = 3
+quotient = num7 / num2
+songs = ["Toxicity" , "Blue World" , "Miles Apart"]
+songs.shift
+
+p "How many characters are in #{food} ? There are #{food.size} characters in #{food}"
