@@ -1,23 +1,26 @@
-class ServingMonitor
- (the thing the servers use to enter data about tables and things,
- I have no idea whats its called)
+class Freezer
+ 
 
  Attributes
 
 
- screen_resolution(int)
- open_tables(int)
- reservations(hash) |key = last_name(string) , value = table_number (int) |
- current_server(string)
- is_max_occupants(boolean)
- is_patio_open(boolean)
+ brand(string)
+ temperature_gauge(int)
+ freezer_contents(hash) |key = food_name(string) , value = quantity (int) |
+ is_door_open(boolean)
+ freezer_light_on (boolean)
+ number_of_shelves (int)
+ 
 
 
 
  Methods
 
- fill_seats(if open_tables is 0, change state of is_max_occupants to true, and set is_patio_open to true)
- change_shift(updated the current_server string)
- new_reservation(updates hash with new last name and table_number, decrement open_tables by 1)
- resize(changes the size of the current application window to the given integer)
- close_restaurant(updates open_tables to original state, updates is_max_occupants to false, as well as is_patio_open)
+ open_door(sets is_door_open && is_freezer_light_on to true)
+ add_frozen_food(adds a new key value pair to hash)
+ set_temperature(changes temperature_gauge to given integer)
+ increase_capacity(increments number_of_shelves) 
+ break_shelf(decreases number_of_shelves by 1, decreases value of the last key value pair by 3)
+ 
+ 
+ 
