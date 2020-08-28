@@ -4,7 +4,7 @@ Attributes
 
 brand(string)
 burner_dial(float)
-pots(array)
+pots_on_burner(array)
 burners(hash) |  burner_position(int) , is_on(boolean) |
 timer(int)
 is_oven_open(boolean)
@@ -12,11 +12,11 @@ is_oven_open(boolean)
 
 Methods
 
-cook(if is_oven_open is false, decrement timer )
-new_pot(updates the pots array)
+cook_food(if is_oven_open is false, decrement timer )
+add_new_pot(adds a new pot to the pots_on_burner array)
 heat_stovetop(for given key (burner position) change value of is_on )
-self_clean(override given timer amount and applies full heat for new timer amount of 120)
-time_remaining(returns how long until timer reaches 0)
+clean_oven(override given timer amount and applies full heat for new timer amount of 120)
+get_remaining_time(returns how long until timer reaches 0)
 
 
 end
