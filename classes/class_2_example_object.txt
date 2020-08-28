@@ -17,8 +17,8 @@ Instance charlies_freezer
  Methods
 
  charlies_freezer.open_door  -> is_door_open: true  || freezer_light_on: true
- charlies_freezer.add_frozen_food(adds a new key value pair to hash)
- charlies_freezer.set_temperature(changes temperature_gauge to given integer)
- charlies_freezer.increase_capacity(increments number_of_shelves) 
- charlies_freezer.break_shelf(decreases number_of_shelves by 1, decreases value of the last key value pair by 3)
+ charlies_freezer.add_frozen_food(freezer_contents["Fish"] = 20)     -> freezer_contents: {"Chicken": 30 , "Beef": 25 , "Tuna": 13 , "Soup Base": 10 , "Fish":20}
+ charlies_freezer.set_temperature(8)    ->    temperature_gauge: 8
+ charlies_freezer.increase_capacity  ->  number_of_shelves: 11 
+ charlies_freezer.break_shelf ->  number_of_shelves: 10  || freezer_contents: {"Chicken": 30 , "Beef": 25 , "Tuna": 13 , "Soup Base": 10 , "Fish":17}
  
